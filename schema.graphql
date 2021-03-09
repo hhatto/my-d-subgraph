@@ -1,0 +1,13 @@
+type Lockedup @entity {
+  id: ID!
+  from: Bytes! # address
+  property: Bytes! # address
+  value: BigInt
+}
+
+type PropertyTransfer @entity {
+  id: ID!
+  property: Bytes! # address
+  from: Bytes! # address
+  to: Bytes! # address
+}
